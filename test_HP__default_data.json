@@ -1,19 +1,26 @@
 {
     "users": [
         {
-            "launchpad_id": "foo",
-            "user_name": "Pupkin",
-            "emails": ["user@test.org"],
+            "launchpad_id": "azher-ullah-khan",
             "companies": [
                 {
-                    "company_name": "Uno",
-                    "end_date": "2013-Jan-01"
-                },
-                {
-                    "company_name": "Duo",
+                    "company_name": "HP",
                     "end_date": null
                 }
-            ]
+            ],
+            "user_name": "azher ullah khan",
+            "emails": ["azher-ullah.khan@hp.com"]
+        },
+        {
+            "launchpad_id": "bmahalakshmi",
+            "companies": [
+                {
+                    "company_name": "HP",
+                    "end_date": null
+                }
+            ],
+            "user_name": "Mahalakshmi",
+            "emails": ["bmahalakshmi@hp.com"]
         },
         {
             "launchpad_id": "jenkins",
@@ -38,48 +45,12 @@
         {
             "company_name": "Hewlett-Packard",
             "domains": ["hp.com"]
-        },
-        {
-            "company_name": "Intel",
-            "domains": ["intel.com"]
-        },
-        {
-            "company_name": "Mirantis",
-            "domains": ["mirantis.com"],
-            "aliases": ["Mirantis Inc", "Mirantis Inc.", "Mirantis, Inc", "Mirantis, Inc.", "Mirantis IT"]
         }
     ],
 
     "repos": [
         {
             "releases": [
-                {
-                    "tag_to": "2012.1",
-                    "release_name": "Essex",
-                    "tag_from": "2011.3"
-                },
-                {
-                    "tag_to": "folsom-eol",
-                    "release_name": "Folsom",
-                    "tag_from": "2012.1"
-                },
-                {
-                    "tag_to": "grizzly-eol",
-                    "release_name": "Grizzly",
-                    "tag_from": "2012.2"
-                },
-                {
-                    "branch": "stable/havana",
-                    "tag_to": "HEAD",
-                    "release_name": "Havana",
-                    "tag_from": "2013.1"
-                },
-                {
-                    "branch": "stable/icehouse",
-                    "tag_to": "HEAD",
-                    "release_name": "Icehouse",
-                    "tag_from": "2013.2"
-                },
                 {
                     "tag_to": "HEAD",
                     "release_name": "Juno",
@@ -95,17 +66,34 @@
             "organization": "openstack",
             "uri": "git://git.openstack.org/openstack/python-glanceclient.git"
         },
+            "module": "eon",
+            "organization": "hp"
+            "uri": "git://review.hpcloud.net/hp/eon.git",
+        },
         {
-            "module": "stackalytics",
-            "organization": "stackforge",
-            "uri": "git://git.openstack.org/stackforge/stackalytics.git"
+            "module": "solar-ui",
+            "organization": "hp",
+            "uri": "git://review.hpcloud.net/hp/solar-ui.git"
+        },
+        {
+            "module": "sherpa-ui",
+            "organization": "hp",
+            "uri": "git://review.hpcloud.net/hp/sherpa-ui.git"
         }
     ],
 
     "project_sources": [
         {
+            "organization": "openstack",
+            "module_group_name": "openstack"
+        },
+        {
             "organization": "openstack-ops",
             "module_group_name": "OpenStack-Ops"
+        },
+        {
+            "organization": "hp",
+            "module_group_name": "hp"
         }
     ],
 
@@ -118,46 +106,6 @@
 
     "releases": [
         {
-            "release_name": "prehistory",
-            "end_date": "2010-Jan-01"
-        },
-        {
-            "release_name": "Austin",
-            "end_date": "2010-Oct-21"
-        },
-        {
-            "release_name": "Bexar",
-            "end_date": "2011-Feb-03"
-        },
-        {
-            "release_name": "Cactus",
-            "end_date": "2011-Apr-15"
-        },
-        {
-            "release_name": "Diablo",
-            "end_date": "2011-Sep-22"
-        },
-        {
-            "release_name": "Essex",
-            "end_date": "2012-Apr-05"
-        },
-        {
-            "release_name": "Folsom",
-            "end_date": "2012-Oct-04"
-        },
-        {
-            "release_name": "Grizzly",
-            "end_date": "2013-Apr-04"
-        },
-        {
-            "release_name": "Havana",
-            "end_date": "2013-Oct-17"
-        },
-        {
-            "release_name": "Icehouse",
-            "end_date": "2014-Apr-17"
-        },
-        {
             "release_name": "Juno",
             "end_date": "2014-Oct-17"
         }
@@ -168,37 +116,19 @@
 
     "project_types": [
         {
-            "id": "all",
+           "id": "all",
             "title": "All",
-            "modules": ["openstack", "openstack-infra", "openstack-dev", "stackforge", "unknown"]
-        },
-        {
-            "id": "openstack",
-            "title": "OpenStack",
-            "modules": ["openstack", "openstack-infra", "openstack-dev"]
-        },
-        {
-            "id": "integrated",
-            "title": "integrated",
-            "child": true,
-            "modules": ["official-integrated"]
-        },
-        {
-            "id": "incubated",
-            "title": "incubated",
-            "child": true,
-            "modules": ["official-incubated"]
-        },
-        {
-            "id": "other",
-            "title": "other",
-            "child": true,
-            "modules": ["official-other"]
+            "modules": ["openstack", "openstack-infra", "openstack-dev", "stackforge", "unknown", "hp"]
         },
         {
             "id": "stackforge",
             "title": "Stackforge",
             "modules": ["stackforge"]
+        },
+        {
+            "id": "hp",
+            "title": "hp",
+            "modules": ["p/hp"]
         }
     ]
 }
