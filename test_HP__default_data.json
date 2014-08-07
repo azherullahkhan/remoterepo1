@@ -68,7 +68,7 @@
         },
             "module": "eon",
             "organization": "hp",
-            "uri": "git://review.hpcloud.net/hp/eon.git",
+            "uri": "git://review.hpcloud.net/hp/eon.git"
         },
         {
             "module": "solar-ui",
