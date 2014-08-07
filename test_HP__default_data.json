@@ -67,7 +67,7 @@
             "uri": "git://git.openstack.org/openstack/python-glanceclient.git"
         },
             "module": "eon",
-            "organization": "hp"
+            "organization": "hp",
             "uri": "git://review.hpcloud.net/hp/eon.git",
         },
         {
